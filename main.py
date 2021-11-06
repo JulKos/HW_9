@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 from ya_disk import YaUploader
-
+from SOF import Stackoverflow
 
 if __name__ == '__main__':
     token = ""
@@ -11,4 +11,6 @@ if __name__ == '__main__':
     uploader = YaUploader(token=token)
     result = uploader.upload_file_to_disk(path_to_file, filename)
 
-#    pprint(ya.get_files_list())
+if __name__ == '__main__':
+    Stackoverflow = Stackoverflow()
+    pprint(Stackoverflow.get_all_requests())
